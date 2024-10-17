@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wax pens - Explora nuestros productos y conoce quiénes somos">
+    <title>Wax Pens - Quiénes somos</title>
+    <!-- Vincular los archivos CSS -->
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a Wax Pens</h1>
+    <p>Tu tienda en línea de vaporizadores de cera de la mejor calidad</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#quienes-somos">Quiénes Somos</a>
+    <a href="#catalogo" id="catalog-link">Catálogo</a>
+    <!-- Enlace directo a WhatsApp con el número proporcionado -->
+    <a href="https://wa.me/50683403546?text=Hola%20Miguel%20Romero,%20estoy%20interesado%20en%20tus%20productos%20Wax%20Pens!" target="_blank">WhatsApp</a>
+</nav>
+
+<div class="container">
+    <!-- Sección de "Quiénes somos" -->
+    <section id="quienes-somos" class="about-section">
+        <h2>Quiénes Somos</h2>
+        <p>En Wax Pens, nos dedicamos a ofrecer los mejores vaporizadores de cera del mercado. Con más de 10 años de experiencia, nos hemos consolidado como una de las marcas líderes en el sector. Nuestros productos combinan tecnología avanzada con un diseño elegante para ofrecer una experiencia de vaporización de alta calidad. ¡Explora nuestro catálogo y descubre el dispositivo perfecto para ti!</p>
+        <a href="#catalogo" class="catalog-button" id="show-catalog">Ver Catálogo</a>
+    </section>
+
+    <!-- Sección de Catálogo -->
+    <div id="catalogo" class="catalog">
+        <!-- Producto 1 -->
+        <div class="product">
+            <img src="../img/wax_cookies.png" alt="Wax Pen Modelo Cookies">
+            <h3>Wax Pen Cookies</h3>
+            <p>Una marca reconocida por su calidad premium. Este modelo ofrece batería de larga duración y diseño compacto.</p>
+            <span>$99.99</span>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product">
+            <img src="../img/wax_blue_dream.png" alt="Wax Pen Blue Dream">
+            <h3>Wax Pen Blue Dream</h3>
+            <p>Ideal para usuarios avanzados, con control de temperatura ajustable y cámara cerámica.</p>
+            <span>$129.99</span>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product">
+            <img src="../img/Wax%20Pen%20OG%20Kush.png" alt="Wax Pen OG Kush">
+            <h3>Wax Pen OG Kush</h3>
+            <p>Modelo potente con vaporización rápida y materiales de alta resistencia.</p>
+            <span>$109.99</span>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="product">
+            <img src="../img/wax,pinaple.png" alt="Wax Pen Pineapple Express">
+            <h3>Wax Pen Pineapple Express</h3>
+            <p>Este modelo ofrece portabilidad extrema, con carga rápida y diseño ergonómico.</p>
+            <span>$89.99</span>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="product">
+            <img src="../img/waxgorila.png" alt="Wax Pen Gorilla Glue">
+            <h3>Wax Pen Gorilla Glue</h3>
+            <p>Con su robusto diseño, este wax pen está pensado para usuarios que buscan durabilidad y rendimiento.</p>
+            <span>$119.99</span>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="product">
+            <img src="../img/c604bacea3050be335ca13a1581b0c08-thcp-vape-pen-super-lemon-haze.png" alt="Wax Pen Lemon Haze">
+            <h3>Wax Pen Lemon Haze</h3>
+            <p>Combina estilo con tecnología avanzada, permitiendo una experiencia de vaporización única.</p>
+            <span>$139.99</span>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Wax Pens © 2024 | Todos los derechos reservados</p>
+</footer>
+
+<script>
+    // Funcionalidad para mostrar el catálogo al hacer clic en el botón
+    document.getElementById('show-catalog').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('catalogo').classList.toggle('active');
+        window.scrollTo({
+            top: document.getElementById('catalogo').offsetTop,
+            behavior: 'smooth'
+        });
+    });
+
+    // Funcionalidad para mostrar el catálogo desde el enlace del menú
+    document.getElementById('catalog-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('catalogo').classList.toggle('active');
+        window.scrollTo({
+            top: document.getElementById('catalogo').offsetTop,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+</body>
+</html>
